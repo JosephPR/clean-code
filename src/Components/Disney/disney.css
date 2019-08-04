@@ -1,0 +1,9 @@
+.disney-heading {
+  text-align: center;
+}
+
+.alice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

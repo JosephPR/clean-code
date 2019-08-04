@@ -1,0 +1,12 @@
+.hi {
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(1, 26, 129, 0.91);
+}
+
+.welcome, .intro {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-around;
+}
