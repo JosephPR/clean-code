@@ -14,7 +14,7 @@ function App() {
 
         <Menu  pageWrapId={"page-wrap"} outerContainerId={"App"}>
           <Link className="home" to ="/">Welcome</Link>
-          <Link className="home" to ="/disney">Disney</Link>
+          <Link className="home" to ="/disney">Alice</Link>
         </Menu>
 
         <Route exact path="/" component={Welcome} />
