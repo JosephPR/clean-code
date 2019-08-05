@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Grid, Image } from 'semantic-ui-react';
 
 import './genie.css'
 
@@ -22,8 +23,26 @@ export default function Genie() {
              unpredictable force, start an uncontrollable chain of events. Sometimes
              in the form,<br /> you can't put the genie back in the bottle.
           </section>
+          <Button onClick={() => {alert("Wishes to be granted")}} inverted color='olive'>
+       Wishes
+     </Button>
         </div>
       </div>
+      <br />
+      <Grid  columns='three' divided>
+   <Grid.Row className='genie-pics'>
+     <Grid.Column >
+       <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIW0Jh03yqz8xJyMbvRQipcUs4eqqQPv5XWkMtoEvUnF3v138bjA' />
+     </Grid.Column>
+     <Grid.Column>
+       <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-CviD-SZZzHEfGCcAoFxDRPIr7-wU0Lj_wIZYcFgT1NHXwYKUMg' />
+     </Grid.Column>
+     <Grid.Column>
+       <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72FSCPOQcM8DzYogP4UNE0yBC46xy-0RmI30J0SHJP1be8kim' />
+     </Grid.Column>
+   </Grid.Row>
+
+ </Grid>
     </>
   )
 }

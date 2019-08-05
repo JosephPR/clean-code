@@ -1,0 +1,10 @@
+.title {
+  text-align: center;
+}
+
+.nowPlaying {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  margin-left: 10%;
+}
