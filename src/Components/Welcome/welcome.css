@@ -3,10 +3,35 @@
   font-size: 3rem;
   color: rgba(1, 26, 129, 0.91);
 }
+h3 {
+  font-size: 2rem;
+  padding-top: 90px
+}
+.drink-me {
+  padding-left: 110px
+}
+
+.directory-items {
+  background-color: rgba(66, 190, 186, 0.16);
+  border: 1px solid cornflowerblue;
+  box-shadow: 1px 1px;
+  border-radius: 5%;
+}
+
+.titles {
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-right: 10%
+}
 
 .welcome, .intro {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
