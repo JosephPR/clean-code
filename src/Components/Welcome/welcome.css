@@ -4,8 +4,8 @@
   color: rgba(1, 26, 129, 0.91);
 }
 h3 {
-  font-size: 2rem;
-  padding-top: 90px
+  font-size: 1.5rem;
+  padding-top: 0px
 }
 .drink-me {
   padding-left: 110px
@@ -25,7 +25,8 @@ h3 {
   align-items: flex-end;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-right: 10%
+  padding-right: 10%;
+  padding-top: 5%;
 }
 
 .welcome, .intro {

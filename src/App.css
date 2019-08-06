@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Cinzel|Gloria+Hallelujah|Montserrat|Satisfy|Source+Sans+Pro&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Barriecito', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Satisfy', cursive;
+font-family: 'Gloria Hallelujah', cursive; */
+/*
+#BFF0D4 light pastel green
+#B8E2C8   pastel green
+#ABC8C7  greyish blue green
+#A5B5BF  greyish blue
+#B0A1BA  pastel purple */
+
+
+.App {
+  text-align: center;
+font-family: 'Source Sans Pro', sans-serif;
+}
