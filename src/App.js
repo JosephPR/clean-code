@@ -9,8 +9,12 @@ import Genie from './Components/Genie/genie';
 import Playing from './Components/Playing/playing'
 import RickAndMorty from './Components/RickAndMorty/rick-and-morty'
 import Stock from './Components/Stock/stock';
-import Megaman from './Components/Megaman/megaman'
-import Robot from './Components/Robot/robot'
+import Megaman from './Components/Megaman/megaman';
+import Robot from './Components/Robot/robot';
+import Jokes from './Components/Jokes/jokes';
+import Brewery from './Components/Brewery/brewery';
+import Beer from './Components/Beer/beer';
+
 import './App.css';
 import './sidebar.css';
 
@@ -28,6 +32,9 @@ function App() {
             <Link className="home" to ="/stocks">Stocks</Link>
             <Link className="home" to ="/megaman">Megaman</Link>
             <Link className="home" to ="/robots">Robots</Link>
+            <Link className="home" to ="/jokes">ChuckJokes</Link>
+            <Link className="home" to ="/brewery">CoBreweries</Link>
+            <Link className="home" to ="/beer">CoBeer</Link>
 
         </Menu>
 
@@ -39,6 +46,10 @@ function App() {
         <Route path="/stocks" component={Stock} />
         <Route path="/megaman" component={Megaman} />
         <Route path="/robots" component={Robot} />
+        <Route path="/jokes" component={Jokes} />
+        <Route path="/Brewery" component={Brewery} />
+        <Route path="/beer" component={Beer} />
+
       </Router>
     </div>
   );

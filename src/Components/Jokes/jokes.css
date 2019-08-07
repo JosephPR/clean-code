@@ -1,0 +1,11 @@
+.jokes {
+  text-align: center;
+  font-size: 40px;
+  background: -webkit-linear-gradient(180deg,rgb(60, 16, 143), rgb(54, 155, 212));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  text-align: center;
+}
