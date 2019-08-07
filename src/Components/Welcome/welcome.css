@@ -1,7 +1,6 @@
 .hi {
   text-align: center;
   font-size: 3rem;
-  color: rgba(1, 26, 129, 0.91);
 }
 h3 {
   font-size: 1.5rem;
@@ -13,6 +12,13 @@ h3 {
 
 .directory-items {
   background-color: rgba(66, 190, 186, 0.16);
+  border: 1px solid cornflowerblue;
+  box-shadow: 1px 1px;
+  border-radius: 5%;
+}
+.directory-items2 {
+  margin-top: 10px;
+  background-color: rgba(199, 171, 128, 0.16);
   border: 1px solid cornflowerblue;
   box-shadow: 1px 1px;
   border-radius: 5%;
@@ -35,4 +41,10 @@ h3 {
   align-items: flex-end;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 2rem;
 }

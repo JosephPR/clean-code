@@ -10,6 +10,7 @@ import Playing from './Components/Playing/playing'
 import RickAndMorty from './Components/RickAndMorty/rick-and-morty'
 import Stock from './Components/Stock/stock';
 import Megaman from './Components/Megaman/megaman'
+import Robot from './Components/Robot/robot'
 import './App.css';
 import './sidebar.css';
 
@@ -26,6 +27,7 @@ function App() {
             <Link className="home" to ="/rickandmorty">Rick and Morty</Link>
             <Link className="home" to ="/stocks">Stocks</Link>
             <Link className="home" to ="/megaman">Megaman</Link>
+            <Link className="home" to ="/robots">Robots</Link>
 
         </Menu>
 
@@ -36,6 +38,7 @@ function App() {
         <Route path="/rickandmorty" component={RickAndMorty} />
         <Route path="/stocks" component={Stock} />
         <Route path="/megaman" component={Megaman} />
+        <Route path="/robots" component={Robot} />
       </Router>
     </div>
   );
