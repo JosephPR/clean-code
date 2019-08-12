@@ -1,3 +1,6 @@
+![funzone](https://media.giphy.com/media/dvHen6RxKsf804snfo/giphy.gif)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
