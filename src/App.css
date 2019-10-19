@@ -21,3 +21,11 @@ font-family: 'Source Sans Pro', sans-serif;
 .clock {
   float: right;
 }
+
+.price-card-list {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 400px;
+
+}

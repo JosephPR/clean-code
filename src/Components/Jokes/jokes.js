@@ -5,12 +5,20 @@ export default class Jokes extends Component {
   constructor() {
     super()
     this.state = {
-      jokesData: ''
+      jokesData: '',
+      quote: ''
     }
   }
 
 componentDidMount(){
   const jokes = 'https://api.chucknorris.io/jokes/random'
+  fetch("https://api.kanye.rest")
+  .then(res => res.json())
+  .then(quote => {
+    this.setState({
+      quote: quote.quote
+    })
+  })
 
   fetch(jokes)
     .then(response => response.json())
@@ -58,10 +66,11 @@ componentDidMount(){
 
 
   render () {
-    const { jokesData, jokesData2, jokesData3, jokesData4, jokesData5, jokesData6} = this.state;
+    const { jokesData, jokesData2, jokesData3, jokesData4, jokesData5, jokesData6, quote} = this.state;
     return (
     <div className="joke-div">
-    <h1 className="jokes"><u>Chuck Norris Jokes That Kick Ass Like Chuck Norris</u></h1>
+    <h1 className="jokes"><u>Chuck Norris Jokes That Kick Ass Like Chuck Norris and a Kanye Quote</u></h1>
+    <h2>Kanye Quote:"{quote}"</h2><br />
     <h2>{jokesData}</h2><br />
     <h2>{jokesData2}</h2><br />
     <h2>{jokesData3}</h2><br />

@@ -16,45 +16,81 @@ export default class Stock extends Component {
       searchField: "",
     }
   }
+  intervalID;
+  intervalID1;
+  intervalID2;
+  intervalID3;
+
+  favoriteStocks = () => {
+    let favUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=BABA,FB,WW,TWLO,AAPL&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
+
+    fetch(favUrl)
+      .then(response => response.json())
+      .then(response => this.setState({
+        favData: response.data
+
+      })
+    )
+  }
+
+  techStocks = () => {
+
+      let techUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=AMRN,AMD,NVDA,UBER,LYFT&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
+
+      fetch(techUrl)
+        .then(response => response.json())
+        .then(response => this.setState({
+          techData: response.data
+
+        })
+      )
+  }
+  dailyStocks = () => {
+    let dailyUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=NFLX,CTRP,MYL,BMRN,MNST&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
+
+    fetch(dailyUrl)
+      .then(response => response.json())
+      .then(response => this.setState({
+        dailyData: response.data
+
+      })
+    )
+  }
+  shortStocks = () => {
+      let shortUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=AAL,EA,CI,MMM,DVA&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
+
+      fetch(shortUrl)
+        .then(response => response.json())
+        .then(response => this.setState({
+          shortData: response.data
+
+        })
+      )
+  }
+
 
 componentDidMount(){
-  let favUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=BABA,FB,WW,TWLO,AAPL&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
-
-  fetch(favUrl)
-    .then(response => response.json())
-    .then(response => this.setState({
-      favData: response.data
-
-    })
-  )
-  let techUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=AMRN,AMD,NVDA,UBER,LYFT&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
-
-  fetch(techUrl)
-    .then(response => response.json())
-    .then(response => this.setState({
-      techData: response.data
-
-    })
-  )
-  let dailyUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=NFLX,CTRP,MYL,BMRN,MNST&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
-
-  fetch(dailyUrl)
-    .then(response => response.json())
-    .then(response => this.setState({
-      dailyData: response.data
-
-    })
-  )
-  let shortUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=AAL,EA,CI,MMM,DVA&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
-
-  fetch(shortUrl)
-    .then(response => response.json())
-    .then(response => this.setState({
-      shortData: response.data
-
-    })
-  )
+this.favoriteStocks();
+this.techStocks();
+this.dailyStocks();
+this.shortStocks();
+this.intervalID = setInterval(this.favoriteStocks.bind(this), 1000);
+this.intervalID1 = setInterval(this.techStocks.bind(this), 1000);
+this.intervalID2 = setInterval(this.dailyStocks.bind(this), 1000);
+this.intervalID3 = setInterval(this.shortStocks.bind(this), 1000);
 }
+
+componentWillUnmount() {
+    /*
+      stop getData() from continuing to run even
+      after unmounting this component
+    */
+    clearInterval(this.intervalID);
+    clearInterval(this.intervalID1);
+    clearInterval(this.intervalID2);
+    clearInterval(this.intervalID3);
+  }
+
 
 handleChange = (e) => {
   this.setState({ searchField: e.target.value })

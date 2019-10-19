@@ -14,6 +14,7 @@ import Robot from './Components/Robot/robot';
 import Jokes from './Components/Jokes/jokes';
 import Brewery from './Components/Brewery/brewery';
 import Beer from './Components/Beer/beer';
+import Bitcoin from './Components/Bitcoin/bitcoin';
 
 import './App.css';
 import './sidebar.css';
@@ -35,6 +36,7 @@ function App() {
             <Link className="home" to ="/jokes">ChuckJokes</Link>
             <Link className="home" to ="/brewery">CoBreweries</Link>
             <Link className="home" to ="/beer">CoBeer</Link>
+            <Link className="home" to ="/bitcoin">Bitcoin</Link>
 
         </Menu>
 
@@ -49,6 +51,7 @@ function App() {
         <Route path="/jokes" component={Jokes} />
         <Route path="/Brewery" component={Brewery} />
         <Route path="/beer" component={Beer} />
+        <Route path="/bitcoin" component={Bitcoin} />
 
       </Router>
     </div>
