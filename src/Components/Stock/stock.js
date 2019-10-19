@@ -74,10 +74,10 @@ this.favoriteStocks();
 this.techStocks();
 this.dailyStocks();
 this.shortStocks();
-this.intervalID = setInterval(this.favoriteStocks.bind(this), 1000);
-this.intervalID1 = setInterval(this.techStocks.bind(this), 1000);
-this.intervalID2 = setInterval(this.dailyStocks.bind(this), 1000);
-this.intervalID3 = setInterval(this.shortStocks.bind(this), 1000);
+// this.intervalID = setInterval(this.favoriteStocks.bind(this), 1000);
+// this.intervalID1 = setInterval(this.techStocks.bind(this), 1000);
+// this.intervalID2 = setInterval(this.dailyStocks.bind(this), 1000);
+// this.intervalID3 = setInterval(this.shortStocks.bind(this), 1000);
 }
 
 componentWillUnmount() {
@@ -85,10 +85,10 @@ componentWillUnmount() {
       stop getData() from continuing to run even
       after unmounting this component
     */
-    clearInterval(this.intervalID);
-    clearInterval(this.intervalID1);
-    clearInterval(this.intervalID2);
-    clearInterval(this.intervalID3);
+    // clearInterval(this.intervalID);
+    // clearInterval(this.intervalID1);
+    // clearInterval(this.intervalID2);
+    // clearInterval(this.intervalID3);
   }
 
 
