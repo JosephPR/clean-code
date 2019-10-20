@@ -28,7 +28,7 @@ export default function Welcome() {
         </div>
         <div className='welcome'>
           <Link to="/megaman"><img src='https://media.giphy.com/media/5vCUuxG7LNEwo/giphy.gif' alt='megaman' /></Link>
-            <Link to="/rickandmorty"><img src='https://media.giphy.com/media/3ov9k1ZNTELhynEI2A/giphy.gif' alt='rick'/></Link>
+            <Link to="/rickandmorty"><img src='https://media3.giphy.com/media/f9R7zLHJQkhNcUzuFU/giphy.gif?cid=790b761122f5c4b2a15002cb8801347e301ec50218665c48&rid=giphy.gif' alt='rick'/></Link>
           <Link to="/stocks"><img src='https://thumbs.gfycat.com/IdealOptimisticGodwit-size_restricted.gif' alt='faceless'/></Link>
         </div>
     </div>

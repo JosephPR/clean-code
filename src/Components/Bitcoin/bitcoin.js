@@ -11,6 +11,8 @@ export default class Bitcoin extends Component {
   }
   intervalID;
 
+  
+
 fetchData = () => {
    const bitcoinPrice = `https://api.coindesk.com/v1/bpi/currentprice.json`
 
