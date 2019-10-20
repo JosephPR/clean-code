@@ -16,10 +16,10 @@ export default class Stock extends Component {
       searchField: "",
     }
   }
-  intervalID;
-  intervalID1;
-  intervalID2;
-  intervalID3;
+  // intervalID;
+  // intervalID1;
+  // intervalID2;
+  // intervalID3;
 
   favoriteStocks = () => {
     let favUrl = `https://api.worldtradingdata.com/api/v1/stock?symbol=BABA,FB,WW,TWLO,AAPL&api_token=acCz10cbIPNeDpHtlNLT5jsG3J0ivtvcBeQmoOp1GoCFCNkkl9GfsXsT0Nds`
