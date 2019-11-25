@@ -6,7 +6,7 @@ export default function PriceContainer (props) {
   return (
     <React.Fragment>
     <div className="price-card-list">
-      <h1>Bitcoin Price :  {price}</h1>
+      <h1 className='price-text'>Bitcoin Price :  {price}</h1>
 
     </div>
     </React.Fragment>

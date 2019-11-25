@@ -23,9 +23,20 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .price-card-list {
-  font-size: 3rem;
   display: flex;
   justify-content: center;
-  padding-top: 400px;
+  padding-top: 20%;
+  background-color: olive;
+  padding-bottom: 15%;
+}
 
+.price-text{
+color: rgb(6, 6, 43);
+font-size: 300%;
+background-image: linear-gradient(orange, red);
+padding: 10%
+}
+
+#cat {
+  color: white;
 }

@@ -1,3 +1,10 @@
+.content {
+  background-image: linear-gradient(  to right, 
+  rgb(143, 31, 31), 
+  rgb(255, 163, 24), 
+  rgb(0, 255, 42), 
+  rgb(36, 171, 212));
+}
 .hi {
   text-align: center;
   font-size: 3rem;

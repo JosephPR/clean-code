@@ -26,17 +26,21 @@ function App() {
         <Clock className='clock' />
         <Menu  pageWrapId={"page-wrap"} outerContainerId={"App"}>
             <Link className="home" to ="/">Welcome</Link>
+            <h3 id="cat">Economics</h3>
+            <Link className="home" to ="/bitcoin">Bitcoin</Link>
+            <Link className="home" to ="/stocks">Stocks</Link>
+            <h3 id="cat">Movies</h3>
+            <Link className="home" to ="/playing">In Theathers</Link>
             <Link className="home" to ="/disney">Alice</Link>
             <Link className="home" to ="/genie">Genie</Link>
-            <Link className="home" to ="/playing">In Theathers</Link>
+            <h3 id="cat">Characters</h3>
             <Link className="home" to ="/rickandmorty">Rick and Morty</Link>
-            <Link className="home" to ="/stocks">Stocks</Link>
             <Link className="home" to ="/megaman">Megaman</Link>
             <Link className="home" to ="/robots">Robots</Link>
             <Link className="home" to ="/jokes">ChuckJokes</Link>
+            <h3 id="cat">Colorado</h3>
             <Link className="home" to ="/brewery">CoBreweries</Link>
             <Link className="home" to ="/beer">CoBeer</Link>
-            <Link className="home" to ="/bitcoin">Bitcoin</Link>
 
         </Menu>
 

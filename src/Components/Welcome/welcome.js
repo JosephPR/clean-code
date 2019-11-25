@@ -7,6 +7,7 @@ import './welcome.css';
 export default function Welcome() {
   return (
     <>
+    <div className='content'>
     <h1 className='hi'>Joey's Page of Fun</h1>
     <div className='directory-items'>
         <div className='titles'>
@@ -19,8 +20,8 @@ export default function Welcome() {
           <Link to="/disney"><img className='drink-me' src='https://media.giphy.com/media/U51L9vKEbdgyrUeRHM/giphy.gif' alt='alice' /></Link>
           <Link to="/playing"><img src='https://media1.giphy.com/media/ykvRcYBJBiQwg/200w.webp?cid=790b76115d473e3179546c30493793ff&rid=200w.webp' alt='hello'/></Link>
         </div>
-    </div>
-    <div className='directory-items2'>
+   
+   
         <div className='titles'>
           <h3>Megaman</h3>
             <h3>RickAndMorty</h3>
@@ -32,7 +33,7 @@ export default function Welcome() {
           <Link to="/stocks"><img src='https://thumbs.gfycat.com/IdealOptimisticGodwit-size_restricted.gif' alt='faceless'/></Link>
         </div>
     </div>
-
+    </div>
     <footer className="footer">Joseph Reilly 2019</footer>
 
     </>
